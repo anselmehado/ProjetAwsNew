@@ -1,13 +1,13 @@
 $worker  = 2
 $timeout = 30
 #Your application name (note that current is included)
-$app_dir = "/var/www/ProjetAwsNew/current"
-$listen  = File.expand_path 'tmp/sockets/unicorn.sock', $app_dir
-$pid     = File.expand_path 'tmp/pids/unicorn.pid', $app_dir
-$std_log = File.expand_path 'log/unicorn.log', $app_dir
+$anselme_dir = "/var/www/ProjetAwsNew/current"
+$listen  = File.expand_path 'tmp/sockets/unicorn.sock', $anselme_dir
+$pid     = File.expand_path 'tmp/pids/unicorn.pid', $anselme_dir
+$std_log = File.expand_path 'log/unicorn.log', $anselme_dir
 # Defined so that what is Settings above is applied
 worker_processes  $worker
-working_directory $app_dir
+working_directory $anselme_dir
 stderr_path $std_log
 stdout_path $std_log
 timeout $timeout
