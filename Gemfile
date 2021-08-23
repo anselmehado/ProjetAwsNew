@@ -70,4 +70,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'dotenv-rails' # Required to manipulate environment variables in the development environment
 gem 'unicorn' # Application server unicorn
-gem 'mini_racer', platforms: :ruby
+#gem 'mini_racer', platforms: :ruby
